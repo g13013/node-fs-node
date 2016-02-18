@@ -145,5 +145,12 @@ module.exports = {
     FsNode.realpaths.delete(tree.path);
     test.strictEqual(tree.realpath, tree.path, 'must lookup path');
     test.done();
+  },
+
+  toString (test) {
+    var node = new FsNode('tmp');
+    test.equal(`${node.path}`, node.path,'toString');
+    test.equal(node.toString(), node.path,'toString');
+    test.done();
   }
 }

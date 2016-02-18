@@ -1,0 +1,41 @@
+{
+  "name": "fs-node",
+  "version": "1.0.0",
+  "description": "A class that represents a file system folder or file entry, the hole thing is recursively iterable",
+  "main": "lib/fs_node.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "benchmark": "^2.1.0",
+    "microtime": "^2.0.0",
+    "nodeunit": "^0.9.1",
+    "rewire": "^2.5.1",
+    "rimraf": "^2.5.2"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/istanbul cover ./tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/g13013/node-fs-node.git"
+  },
+  "keywords": [
+    "fs",
+    "node",
+    "generator",
+    "iterator"
+  ],
+  "author": {
+    "name" : "Aboubakr Gasmi",
+    "email" : "g13013@gmail.com",
+    "url" : "http://barnyrubble.tumblr.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/g13013/node-fs-node/issues"
+  },
+  "homepage": "https://gitlab.com/g13013/node-fs-node/blob/master/README.md",
+  "engines" : { "node" : ">=4.0.0" }
+}

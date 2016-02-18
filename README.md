@@ -1,8 +1,15 @@
 # FsNode
 
+[![Build Status](https://travis-ci.org/g13013/node-fs-node.svg?branch=master)](https://travis-ci.org/g13013/node-fs-node)
+[![Dependencies](https://david-dm.org/g13013/node-fs-node.svg)](https://www.npmjs.com/package/fs-node)
+[![DevDependencies](https://david-dm.org/g13013/node-fs-node/dev-status.svg)](https://www.npmjs.com/package/fs-node)
+[![Issue Count](https://codeclimate.com/github/g13013/node-fs-node/badges/issue_count.svg)](https://www.npmjs.com/package/fs-node)
+
+[![Issue Count](https://nodei.co/npm/fs-node.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/fs-node)
+
 A class that represents a file system folder or file entry,
 it implements a caching system and accessors for lazy information lookup.
-The hole thing is iterable using ES2015 `Symbol.iterator` and `generators`.
+The hole thing is iterable using [ES2015](http://www.ecma-international.org/ecma-262/6.0/) [Symbol.iterator](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Symbol/iterator) and [Generators](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Generator).
 
 ## Usage
 
@@ -32,20 +39,20 @@ var allFiles = dir.allPaths; // [...]
 
 ```js
 // one level iteration
-for(let entry in dir) {
+for(let entry of dir) {
   // do stuff
 }
 
 
 // recursive iteration
-for(let entry in dir.all) {
+for(let entry of dir.all) {
   // do stuff
 }
 
 var file = new FsNode('some_file');
 
 // files are not iterable ... right ?
-for(let entry in file) {
+for(let entry of file) {
   // no doubt
 }
 

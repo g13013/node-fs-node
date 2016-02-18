@@ -1,7 +1,7 @@
 {
   "name": "fs-node",
   "version": "1.0.0",
-  "description": "A class that represents a file system folder or file entry, the hole thing is recursively iterable",
+  "description": "A class that represents a file system folder or file entry, the whole thing is recursively iterable",
   "main": "lib/fs_node.js",
   "directories": {
     "test": "tests"

@@ -9,7 +9,7 @@
 
 A class that represents a file system folder or file entry,
 it implements a caching system and accessors for lazy information lookup.
-The hole thing is iterable using [ES2015](http://www.ecma-international.org/ecma-262/6.0/) [Symbol.iterator](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Symbol/iterator) and [Generators](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Generator).
+The whole thing is iterable using [ES2015](http://www.ecma-international.org/ecma-262/6.0/) [Symbol.iterator](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Symbol/iterator) and [Generators](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Generator).
 
 ## Usage
 

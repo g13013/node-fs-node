@@ -92,7 +92,7 @@ FsNode.realpaths; // instance of Map - path => realpath
 ## Performance
 
 This module includes very basic benchmarks that produce good results
-especially when it's question of reapeated operations and initialisation
+especially when it's question of repeated operations
 
 ```sh
 node tests/bench.js

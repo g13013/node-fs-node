@@ -88,7 +88,7 @@ var file = new FsNode('some_file');
 
 console.log(file.stat); // cached
 console.log(file.lstat); // cached
-console.log(file.invalidate('stat')).stat; // invalidate and force lookup using fs.stat
+console.log(file.invalidate('stat').stat); // invalidate and force lookup using fs.stat
 console.log(file.stat); // cached again
 console.log(file.invalidate()); // clear cache and
 console.log(file.lstat); // now use fs.lstat

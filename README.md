@@ -63,21 +63,22 @@ for(let entry of file) {
 ```js
 var file = new FsNode('some_file');
 
-file.cache = // Map instance
-file.filename;
-file.relativePath; // to process.cwd()
-file.relativeDirname; // to process.cwd()
-file.realpath; //cached
-file.path;
-file.dirname;
-file.basename; // without extension
-file.extname; // '.*'
-file.isDirectory; // cached
-file.isSymlinkedDirectory; // cached
-file.isFile; // cached
-file.isSymlinkedFile;
-file.stat; // cached
-file.lstat; // cached
+console.log(file.cache);// instance of Map
+console.log(file.filename);
+console.log(file.relativePath); // to process.cwd()
+console.log(file.relativeDirname); // to process.cwd()
+console.log(file.realpath); //cached
+console.log(file.path);
+console.log(file.dirname);
+console.log(file.basename); // without extension
+console.log(file.extname); // '.*'
+console.log(file.isDirectory); // cached
+console.log(file.isSymlinkedDirectory); // cached
+console.log(file.isFile); // cached
+console.log(file.isSymlinkedFile);
+console.log(file.isSymbolicLink);
+console.log(file.stat); // cached
+console.log(file.lstat); // cached
 ```
 
 ### Cache
@@ -85,15 +86,15 @@ file.lstat; // cached
 ```js
 var file = new FsNode('some_file');
 
-file.stat; // cached
-file.lstat; // cached
-file.invalidate('stat').stat; // invalidate and force lookup using fs.stat
-file.stat; // cached again
-file.invalidate(); // clear cache
-file.lstat; // now use fs.lstat
+console.log(file.stat); // cached
+console.log(file.lstat); // cached
+console.log(file.invalidate('stat')).stat; // invalidate and force lookup using fs.stat
+console.log(file.stat); // cached again
+console.log(file.invalidate()); // clear cache and
+console.log(file.lstat); // now use fs.lstat
 
-FsNode.cache; // all FsNode instances
-FsNode.realpaths; // instance of Map - path => realpath
+console.log(FsNode.cache); // all FsNode instances
+console.log(FsNode.realpaths); // instance of Map - path => realpath
 ```
 
 ## Performance
